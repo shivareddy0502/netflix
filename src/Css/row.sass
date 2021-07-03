@@ -1,0 +1,33 @@
+.row
+    color: white;
+    .row__title
+        padding-bottom: 20px;
+        margin-left: 50px;
+    .row__posters::-webkit-scrollbar
+        display: none;
+    .row__posters   
+        
+        position: relative;
+        .sliderArrow
+            width: 50px;
+            height: 100%;
+            background: rgba(20,20,20,.5); 
+            position: absolute;
+            cursor: pointer;
+            z-index: 99;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            z-index: 1;
+            &.left
+                left: 0;
+            &.right
+                right: 0;
+        .row__poster__slider
+            display: flex;
+            width: max-content;
+            margin: 10px 50px;
+            transform: transalteX(0px);
+            transition: all 1s ease;
+        

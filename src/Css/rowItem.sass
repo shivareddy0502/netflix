@@ -1,0 +1,69 @@
+.row__item
+    height: 120px;
+    width: 225px;
+    background: #111;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    &:hover
+        width: 325px;
+        height: 300px;
+        position: absolute;
+        border-radius: 5px;
+        top: -100px
+        z-index: 10;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        .row__item__image
+            height: 180px;
+    .row__item__image
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    video
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    .row__item__info
+        .icons
+            display: flex;
+            justify-content: space-between;
+            .icons__left
+                flex: 5 ;
+                display: flex;
+                justify-content: space-between;
+            .icons__right
+                flex: 5 ;
+                display: flex;
+                justify-content: flex-end;
+            .icon
+                border: 2px solid white;
+                padding: 5px;
+                border-radius: 50%;
+        .top
+            margin: 1em 0 0 0;
+            display: flex;
+            align-items: center;
+            .top__match
+                color: #46D369;
+                font-weight: 600;
+            .top__age__group
+                border: 1px solid grey;
+                padding: 2px 10px;
+                margin-left: 10px;
+            .top__duration
+                margin: 0 0 0 10px;
+        .bottom
+            display: flex;
+            color: #9e9c9c;
+            justify-content: space-between;
+            margin: 1em 0 0 0;
+            .bottom__genre
+.nobackground
+    color: white;
+    text-decoration: none;
